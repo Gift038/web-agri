@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+
+.topbar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info span {
+  margin-right: 20px;
+}
+
+.auth-links a {
+  margin-left: 10px;
+  color: #a5f279;
+  text-decoration: none;
+}
+
+.navbar {
+  background: url('./images/navbar-texture.jpg') center/cover no-repeat, rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .green {
+  color: #a5f279;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  color: #57e32c;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #27ae60;
+  font-weight: bold;
+  border-bottom: 2px solid #27ae60;
+}
+
+
+.search-icon {
+  font-size: 18px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('./images/agric4.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn.green {
+  background-color: #57e32c;
+  color: white;
+}
+
+.btn.outline {
+  border: 2px solid #57e32c;
+  color: #57e32c;
+  background-color: transparent;
+}
